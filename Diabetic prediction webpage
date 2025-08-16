@@ -1,0 +1,46 @@
+import numpy as np
+import pickle
+import streamlit as st
+
+# loading the saved model
+loaded_model = pickle.load(open("C:/Users/akash/Downloads/trained_model.sav", 'rb'))
+
+# creating a function for prediction
+def diabetes_prediction(input_data):
+    # changing the input_data to numpy array
+    input_data_as_numpy_array = np.asarray(input_data)
+    # reshape the array for a single sample
+    input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+    # prediction
+    prediction = loaded_model.predict(input_data_reshaped)
+    if prediction[0] == 0:
+        return 'The person is not diabetic'
+    else:
+        return 'The person is diabetic'
+
+def main():
+    # giving a title
+    st.title('Diabetes Prediction Web App')
+
+    # getting the input data from the user
+    pregnancies = st.text_input('Number of Pregnancies')
+    glucose = st.text_input('Glucose Level')
+    blood_pressure = st.text_input('Blood Pressure Value')
+    skin_thickness = st.text_input('Skin Thickness Value')
+    insulin = st.text_input('Insulin Level')
+    bmi = st.text_input('BMI Value')
+    diabetes_pedigree = st.text_input('Diabetes Pedigree Function Value')
+    age = st.text_input('Age of the Person')
+
+    # code for Prediction
+    diagnosis = ''
+
+    # creating a button for Prediction
+    if st.button('Diabetes Test Result'):
+        input_data = [pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree, age]
+        diagnosis = diabetes_prediction(input_data)
+
+    st.success(diagnosis)
+
+if __name__ == '__main__':
+    main()
