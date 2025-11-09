@@ -1,0 +1,181 @@
+{
+  "HDFC": {
+    "SILVER": {
+      "insurer": "HDFC",
+      "plan": "Silver",
+      "sum_insured": 300000,
+      "room": {
+        "type": "shared",
+        "cap_per_day": 4000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 10 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "GOLD": {
+      "insurer": "HDFC",
+      "plan": "Gold",
+      "sum_insured": 500000,
+      "room": {
+        "type": "single_private",
+        "cap_per_day": 7000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "PLATINUM": {
+      "insurer": "HDFC",
+      "plan": "Platinum",
+      "sum_insured": 1000000,
+      "room": {
+        "type": "any_room",
+        "cap_per_day": null,
+        "proportionate_deduction": false
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    }
+  },
+
+  "ICICI": {
+    "SILVER": {
+      "insurer": "ICICI",
+      "plan": "Silver",
+      "sum_insured": 300000,
+      "room": {
+        "type": "shared",
+        "cap_per_day": 4000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 10 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "GOLD": {
+      "insurer": "ICICI",
+      "plan": "Gold",
+      "sum_insured": 500000,
+      "room": {
+        "type": "single_private",
+        "cap_per_day": 7000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "PLATINUM": {
+      "insurer": "ICICI",
+      "plan": "Platinum",
+      "sum_insured": 1000000,
+      "room": {
+        "type": "any_room",
+        "cap_per_day": null,
+        "proportionate_deduction": false
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    }
+  },
+
+  "KOTAK": {
+    "SILVER": {
+      "insurer": "Kotak",
+      "plan": "Silver",
+      "sum_insured": 300000,
+      "room": {
+        "type": "shared",
+        "cap_per_day": 4000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 10 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "GOLD": {
+      "insurer": "Kotak",
+      "plan": "Gold",
+      "sum_insured": 500000,
+      "room": {
+        "type": "single_private",
+        "cap_per_day": 7000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "PLATINUM": {
+      "insurer": "Kotak",
+      "plan": "Platinum",
+      "sum_insured": 1000000,
+      "room": {
+        "type": "any_room",
+        "cap_per_day": null,
+        "proportionate_deduction": false
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    }
+  },
+
+  "NEW_INDIA": {
+    "SILVER": {
+      "insurer": "New India Assurance",
+      "plan": "Silver",
+      "sum_insured": 300000,
+      "room": {
+        "type": "shared",
+        "cap_per_day": 4000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 10 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "GOLD": {
+      "insurer": "New India Assurance",
+      "plan": "Gold",
+      "sum_insured": 500000,
+      "room": {
+        "type": "single_private",
+        "cap_per_day": 7000,
+        "proportionate_deduction": true
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    },
+    "PLATINUM": {
+      "insurer": "New India Assurance",
+      "plan": "Platinum",
+      "sum_insured": 1000000,
+      "room": {
+        "type": "any_room",
+        "cap_per_day": null,
+        "proportionate_deduction": false
+      },
+      "copay": { "percentage": 0 },
+      "deductible": { "fixed": 0 },
+      "procedure_caps": {},
+      "non_payables": ["consumables", "registration_fee"]
+    }
+  }
+}
